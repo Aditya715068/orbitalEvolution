@@ -1,0 +1,45 @@
+@import '../../../styles/app';
+
+.root {
+font-style: Montserrat,sans-serif;
+}
+
+.overFlow {
+  overflow-x: auto;
+}
+
+.mainTableWidget {
+  :global {
+    .table td {
+      border: none;
+    }
+  }
+}
+
+
+
+
+$color_1: #fff;
+$background-color_1: black;
+
+.pagination {
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 5rem;
+	font-size: 1.2rem;
+	gap: 5px;
+	.pagenum {
+		padding: 8px 15px;
+		cursor: pointer;
+		border-radius: 3px;
+		font-weight: 400;
+		&:hover {
+			background-color: $background-color_1;
+			color: $color_1;
+		}
+	}
+	.active {
+		background-color: $background-color_1;
+	}
+}
